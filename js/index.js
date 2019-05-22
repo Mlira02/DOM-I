@@ -42,6 +42,12 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 let navi = document.querySelectorAll("a");
+navi[0].style.color = 'green';
+navi[1].style.color = 'green';
+navi[2].style.color = 'green';
+navi[3].style.color = 'green';
+navi[4].style.color = 'green';
+navi[5].style.color = 'green';
 navi[0].textContent = "Services";
 navi[1].textContent = "Product";
 navi[2].textContent = "Vision";
@@ -79,8 +85,24 @@ pTags[8].textContent = "Copyright Great Idea! 2018";
 
 
 let logo_2 = document.getElementById("middle-img");
+
 logo_2.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
+
 parentElement = document.querySelector('nav');
+
 let append1 = document.createElement('a');
+
 append1.textContent = "Item1";
+
 parentElement.appendChild(append1);
+
+let prepend1 = document.createElement('a');
+
+prepend1.textContent = ('Item 2')
+
+parentElement.prepend(prepend1);
+
+prepend1.style.color = 'green';
+
+append1.style.color = 'green';
+
